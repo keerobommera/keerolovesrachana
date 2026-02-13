@@ -105,3 +105,31 @@ yesBtn.addEventListener("click", () => {
     gifResult.play();
   }, 3000);
 });
+
+// Replay button functionality
+const replayBtn = document.getElementById("replayBtn");
+const valentineVideo = document.getElementById("valentineVideo");
+
+// Disable replay button initially
+replayBtn.disabled = true;
+replayBtn.style.opacity = "0.5";
+replayBtn.style.cursor = "not-allowed";
+
+// Enable replay button when video ends
+valentineVideo.addEventListener("ended", () => {
+  replayBtn.disabled = false;
+  replayBtn.style.opacity = "1";
+  replayBtn.style.cursor = "pointer";
+});
+
+replayBtn.addEventListener("click", () => {
+  if (!replayBtn.disabled) {
+    // Disable button again during replay
+    replayBtn.disabled = true;
+    replayBtn.style.opacity = "0.5";
+    replayBtn.style.cursor = "not-allowed";
+    
+    valentineVideo.currentTime = 0;
+    valentineVideo.play();
+  }
+});

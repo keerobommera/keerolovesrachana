@@ -291,6 +291,31 @@ body {
   text-align: center;
 }
 
+.replay-btn {
+  margin-top: 2rem;
+  padding: 12px 28px;
+  background-color: #ff54a4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 129, 0.4);
+}
+
+.replay-btn:not(:disabled):hover {
+  background-color: #ffa4b1;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 107, 129, 0.6);
+}
+
+.replay-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* heart loader */
 .cssload-main {
   display: none;
