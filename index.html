@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>❤️</text></svg>">
+  <link rel="stylesheet" href="style.css?oogs" />
+  <title>For You ❤️</title>
+</head>
+
+<body>
+  <div class="hearts-background"></div>
+
+  <!-- Password Protected Login -->
+  <div class="login-container" id="loginContainer">
+    <div class="login-box">
+      <h2>🔐 Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="Enter password..." />
+      <button id="submitBtn">Submit</button>
+      <p id="errorMsg" class="error-msg"></p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content" id="mainContent" style="display: none;">
+  <div class="hearts-background"></div>
+
+  <audio id="bgAudio">
+    <source src="./audio.mp3" type="audio/mpeg">
+    <source src="./audio.ogg" type="audio/ogg">
+  </audio>
+
+  <div class="question-container container">
+    <h2 class="question-title"></h2>
+    <video class="local-gif" src="./reply.mp4" autoplay muted loop></video>
+    <h2 class="question">Do you love me?</h2>
+    <div class="button-container">
+      <button class="yes-btn btn js-yes-btn">Yes</button>
+      <button class="no-btn btn js-no-btn">No</button>
+    </div>
+  </div>
+  <div class="result-container container">
+
+    <video class="gif-result" src="./Valentine.mp4" autoplay loop></video>
+    <h2>I knew it😍!</h2>
+    <h3>Love you so much! <br>
+      <div class="forevertext">      
+</div>
+    
+    </h3>
+
+
+
+  </div>
+
+  <div class="cssload-main">
+    <div class="cssload-heart">
+      <span class="cssload-heartL"></span>
+      <span class="cssload-heartR"></span>
+      <span class="cssload-square"></span>
+    </div>
+    <div class="cssload-shadow"></div>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js?dassdsds"></script>
+
+</body>
+
+</html>
