@@ -20,7 +20,6 @@ passwordInput.addEventListener("keypress", (e) => {
 
 function validatePassword() {
   const enteredPassword = passwordInput.value;
-  document.querySelector("title").textContent = `Does ${userNameTo} love❤️ ${userNameFrom} `;
   // Hash the entered password using SHA256
   const enteredPasswordHash = CryptoJS.SHA256(enteredPassword).toString();
 
@@ -92,7 +91,6 @@ yesBtn.addEventListener("click", () => {
   document.querySelector(".forevertext").textContent = `Forever #${userNameFrom}${userNameTo}❤️`;
   // Play audio on button click
   bgAudio.play();
-  document.querySelector("title").textContent = `${userNameTo} ❤️ ${userNameFrom}`;
 
   const timeoutId = setTimeout(() => {
     heartLoader.style.display = "none";
