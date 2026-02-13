@@ -77,7 +77,14 @@ setInterval(createHeart, 300);
 // /change the postion of no button
 noBtn.addEventListener("mouseover", () => {
   const newX = Math.floor(Math.random() * questionContainer.offsetWidth);
-  const newY = Math.floor(Math.random() * questionContainer.offsetWidth);
+  const newY = Math.floor(Math.random() * questionContainer.offsetHeight);
+
+  noBtn.style.left = `${newX}px`;
+  noBtn.style.top = `${newY}px`;
+});
+noBtn.addEventListener("click", () => {
+  const newX = Math.floor(Math.random() * questionContainer.offsetWidth);
+  const newY = Math.floor(Math.random() * questionContainer.offsetHeight);
 
   noBtn.style.left = `${newX}px`;
   noBtn.style.top = `${newY}px`;
